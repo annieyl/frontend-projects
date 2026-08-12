@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen active" id="start-screen">
+            <h1>get to know annie :)</h1>
+            <p>get to know me w/ some fun, not at all contrived questions!</p>
+            <button id="start">start!!!!</button>
+        </div>
+
+        <div class="screen" id="quiz-screen">
+            <div class="quiz-header">
+                <h2 id="question-txt">question didn't load...</h2>
+                <div class="quiz-info">
+                    <p>question <span id="current-question">1</span>
+                        of <span id="total-questions">5</span></p>
+                </div>
+                <p>
+                    score: <span id="score">0</span>
+                </p>
+            </div>
+
+            <div id="answers-container" class="answers-container">
+                <button class="option" id="option1">option 1</button>
+                <button class="option" id="option2">option 2</button>
+                <button class="option" id="option3">option 3</button>
+                <button class="option" id="option4">option 4</button>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <div class="screen" id="result-screen">
+            <h1>congrats! you made it to the end!!! results:</h1>
+            <div class="result-info">
+                <p>you scored <span id="score">0</span> out of <span id="total-questions">5</span>! yippee wahoo!</p>
+                <div id="result-message">u could do better.</div>
+            </div>
+            <button id="restart">play again? :3</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
