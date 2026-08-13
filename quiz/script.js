@@ -81,6 +81,7 @@ let score = 0;
 let answerDisabled = false;
 
 totalQuestionsSpan.textContent = quizQuestions.length;
+finaltotalQuestionsSpan.textContent = quizQuestions.length;
 
 //event listeners
 startButton.addEventListener("click", startQuiz);
