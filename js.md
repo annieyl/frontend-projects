@@ -5,6 +5,7 @@
 - `<script>, <\script>` to run w/in html
 - `<script src="file_name.js"></script>` to import
 
+# basic 
 ## variables
 - initializing values of variables w/ var and let is optional
 - var = function scoped / global scope
@@ -21,6 +22,7 @@
 - Array.from() converts html/dom element (NodeList returned by container.children) into an array, so you can iterate thru it
 - logical operators: &&, ||, and !
 
+
 ## conditionals
 - if (condn) { } else if {} else {}
 - switch statement
@@ -33,6 +35,27 @@ switch (value)
         default: ...
     }
 ```
+## loops
+- do while loops 
+- while loops is `while (cond) {}`
+- for loop: `for (let i = 0; i<10; i++) {}>` same as c++
+    - or `for (let value of arr) {}` to iterate over iterable
+    - `for (let [i,value] of arr.entries()) {}` is python's `enumerate()`
+
+
+## functions
+- `function fun(params=default){}`
+- fun expression `const fun = function(param){}`
+- `const fun = (param) => {fun body}`
+    - can be one line i.e. `const greet = (name) => "hi" + name + "!"`
+- rest params allow u to accept any number of args
+    - `function addNums (...params) {}`
+- methods that take functions
+    - `arr.map( (num) => num*2 )` = `list1.mapp(lambda x: x*2)`
+    - `reduce` accumulator and x
+    - `filter`
+    
+# data structures 
 
 ## arrays
 - do NOT have to be the same type
@@ -54,13 +77,6 @@ switch (value)
 - `arr.concat(arr2)`, `arr.join()`, same as python
 - `slice()` returns copy of section of array
 - `splice(idx, # of items to delete)` = python's `list1.remove()`
-
-## loops
-- do while loops 
-- while loops is `while (cond) {}`
-- for loop: `for (let i = 0; i<10; i++) {}>` same as c++
-    - or `for (let value of arr) {}` to iterate over iterable
-    - `for (let [i,value] of arr.entries()) {}` is python's `enumerate()`
 
 ## objects
 - `obj = { field: val, field1:val1, field2:val2 }`
@@ -85,6 +101,8 @@ switch (value)
     - `size()`
 - `for (const [key,value] of m) {}`
 
+# misc
+
 ## try-catching
 ```
 try {
@@ -96,18 +114,6 @@ try {
 }
 ```
 - can throw ur own error w `throw new Error("AAAA")`
-
-## functions
-- `function fun(params=default){}`
-- fun expression `const fun = function(param){}`
-- `const fun = (param) => {fun body}`
-    - can be one line i.e. `const greet = (name) => "hi" + name + "!"`
-- rest params allow u to accept any number of args
-    - `function addNums (...params) {}`
-- methods that take functions
-    - `arr.map( (num) => num*2 )` = `list1.mapp(lambda x: x*2)`
-    - `reduce` accumulator and x
-    - `filter`
 
 ## this
 - `this.val` within an object references fields within the object. DOES NOT WORK W ARROW FNS
