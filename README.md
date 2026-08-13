@@ -85,7 +85,7 @@ switch (value)
     - `get(1)`
     - `has(1)`
     - `size()`
-`for (const [key,value] of m) {}`
+- `for (const [key,value] of m) {}`
 
 ## try-catching
 ```
@@ -108,6 +108,21 @@ try {
     - `function addNums (...params) {}`
 - methods that take functions
     - `arr.map( (num) => num*2 )` = `list1.mapp(lambda x: x*2)`
+    - `reduce` accumulator and x
+    - `filter`
+
+## this
+- `this.val` within an object references fields within the object. DOES NOT WORK W ARROW FNS
+    - the below will work
+
+```
+const person = {
+    name: 'annie',
+    greet() {
+        console.log('my name is $(this.name)`)
+    }
+}
+```
 
 # css notes
 ## good practices
