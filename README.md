@@ -14,16 +14,22 @@ cramming learning frontend
 - const = constant, can't be changed, block scoped
     - objects assigned to constants are not protected, so arrays, dicts, etc. can be assigned to const
 
-## type conversion/equality
+## types, type conversion/equality, logical comparators
 - type conversion with Number(), String(), ...
     - can also convert by adding empty string to a number
 - things not true in strict equality `===` that are true in loose equality `==`?
     - "1" == 1, true == 1, null == undefined, "" = [], ...
-- 
+    - use strict equality preferred
+- Array.from() converts html/dom element (NodeList returned by container.children) into an array, so you can iterate thru it
+- logical operators: &&, ||, and !
+
+## conditionals
+- if (condn) { } else if {} else {}
 
 # css notes
-## box-sizing
+## good practices
 - always apply `box-sizing: border-box;` to avoid having padding exceed the width of an object
+- `cursor: pointer; ` for clickable objects
 
 ## media queries
 - apply different styles based on device characteristics

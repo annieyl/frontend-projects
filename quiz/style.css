@@ -6,6 +6,7 @@
     font-size: 1rem;
     font-family: 'Consolas', monospace;
     font-weight:100;
+    /* border: 1px solid red !important; */
 }
 
 body{
@@ -18,10 +19,9 @@ body{
 }
 
 .container {
-    max-width: 800px;
+    width: clamp(20rem, 80%, 40rem);
     border-radius:1rem;
     box-shadow: 0 1rem 2rem rgba(61, 183, 9, 0.2);
-    max-width: 600px;
     overflow:hidden;
     position:relative;
 }
@@ -33,7 +33,7 @@ button {
     border-radius: 10px;
     padding: 1rem 2rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -75,10 +75,16 @@ h1 {
     display: block;
 }
 
+ h1 {
+    color: #567c1a;
+    border-radius: 10px;
+    padding:20px;
+    margin-bottom:2rem;
+} 
 /* start screen */
 
 #start-screen h1 {
-    color: #56b119;
+    /* color: #56b119; */
     margin-bottom: 1rem;
     /* animation: float 3s ease-in-out infinite; */
 }
@@ -95,11 +101,12 @@ h1 {
     margin-bottom:2rem;
 }
 
-#question-text {
+#question-txt {
     color:#333;
     font-size:1.5rem;
     margin-bottom:1rem;
     line-height:1.4;
+    font-weight:bold;
 }
 
 .quiz-info{
@@ -107,6 +114,8 @@ h1 {
     justify-content:space-between;
     color: #666;
     margin-bottom:1rem;
+    margin-top:1rem;
+    justify-content:center;
 }
 
 .answers-container {
@@ -117,9 +126,9 @@ h1 {
 }
 
 .answer-btn{
-    background-color:#6d8d8b;
+    background-color:#bdc565;
     color:#333;
-    border:2px solid #eadbdc;
+    border:2px solid #aca842;
     border-radius:10px;
     padding:1rem;
     cursor:pointer;
@@ -128,14 +137,15 @@ h1 {
 }
 
 .answer-btn:hover{
-    background-color:#eadbdc;
-    border-color:#dac0ae;
+    background-color:#959a40;
+    border-color:#5c5728;
 }
 
 .answer-btn.correct{
-    background-color:#a3d9a5;
-    border-color:#6eaa71;
-    color:#7aa737;
+    background-color:#b3d384;
+    border-color:#9aad5b;
+    color:#676f0d;
+    font-weight:bold;
 }
 
 .answer-btn.wrong{
@@ -145,40 +155,42 @@ h1 {
 }
 
 .progress-bar {
-    height: 1rem;
+    height: 0.75rem;
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow:hidden;
     margin-top:20px;
 }
 
-progress{
+.progress{
     height:100%;
-    background-color: #89b135;
+    background-color: #80aa26;
+    color:#80aa26;
     transition: width 0.3s ease;
 }
 
 /* results */
 
 #result-screen h1 {
-    color: #dfefc5;
+    color: #567c1a;
     border-radius: 10px;
     padding:20px;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 
 .result-info p {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     color:#333;
 }
 
 
 #result-message {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color:#333;
     
 }
+
 
 
