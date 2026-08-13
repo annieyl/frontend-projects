@@ -81,7 +81,7 @@ let score = 0;
 let answerDisabled = false;
 
 totalQuestionsSpan.textContent = quizQuestions.length;
-finaltotalQuestionsSpan.textContent = quizQuestions.length;
+finalTotalQuestionsSpan.textContent = quizQuestions.length;
 
 //event listeners
 startButton.addEventListener("click", startQuiz);
@@ -159,6 +159,7 @@ function showResults() {
     quizScreen.classList.remove("active");
     resultScreen.classList.add("active");
     finalScoreSpan.textContent = score;
+    finalTotalQuestionsSpan.textContent = quizQuestions.length;
     const percent = (score / quizQuestions.length) * 100;
     let msg = "annie's comment: ";
     if (percent >= 80) {
