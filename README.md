@@ -1,5 +1,5 @@
 # html-css-js-projects
-cramming learning frontend
+cramming learning frontend. made without ai :')
 
 # table of contents
 - [js notes](js.md)
