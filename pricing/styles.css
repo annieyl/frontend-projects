@@ -21,6 +21,23 @@
   --shadow-lg: 0 0 16px rgba(158, 247, 248, 0.4);
 }
 
+/* light-mode */
+.light-mode {
+  --primary-color: #35989a;
+  --primary-dark: #315163;
+  --primary-light: #06b6b0;
+  --accent-color:#0da0a0;
+  --bg-dark: #f8feff;
+  --text-light: #28343a;
+  --text-gray: #437786;
+  --card-bg: #c9dde3;
+  --card-hover: #c0e2e7;
+  --border-radius: 12px;
+  --shadow-sm: 0 0 4px rgba(158, 247, 248, 0.2);
+  --shadow-md: 0 0 10px rgba(158, 247, 248, 0.2);
+  --shadow-lg: 0 0 16px rgba(158, 247, 248, 0.4);
+}
+
 body {
     background: linear-gradient(to bottom, var(--bg-dark), var(--card-bg));
     color: var(--text-light);
@@ -44,9 +61,21 @@ button {
     border: none;
     border-radius: var(--border-radius);
     transition: all 0.3s ease;
+    cursor:pointer;
     /* color: var(--text-light); */
-
 }
+
+.evil{
+    margin-bottom:0.5rem;
+}
+
+.eviler {
+    margin-top:-2rem;
+    background-color:transparent;
+    height:1rem;
+    color:var(--card-bg);
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -210,9 +239,9 @@ header p {
     /* color: var(--text-light); */
 }
 
-button:hover {
+.evil:hover {
     border-color: var(--primary-color);
-    background-color: #afdada;
+    background-color: var(--primary-light);
 }
 
 .btn-accent {
